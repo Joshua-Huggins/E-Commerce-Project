@@ -13,7 +13,7 @@ Product.init(
 
     // defines the product id, makes it primary key 
     id: {
-      type: DataTypes.INTGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
@@ -33,14 +33,14 @@ Product.init(
 
     // defines the stock of a product, leaving default value at 10 for now
     stock: {
-      type: DataType.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 10
     },
     
     // defines the category id, need to refrence the id from the category model
     category_id: {
-      type: DataType.INTEGER,
+      type: DataTypes.INTEGER,
       references: {
         model: 'category',
         key: 'id'

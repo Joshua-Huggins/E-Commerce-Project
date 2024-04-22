@@ -10,7 +10,7 @@ Category.init(
 
     // defines the categor id, makes it the primary key as well
     id: {
-      type: DataType.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
